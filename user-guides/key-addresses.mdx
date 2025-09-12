@@ -47,7 +47,7 @@ This page contains all the essential contract addresses for the Standard Money p
 
 **Description**: This contract is very similar to the StakedUSDsdV2 contract with one major difference. You need to have a balance staked in the first staking contract in order to stake in this one. Specifically to stake 1 token in this contract, you need to have 10 tokens staked in the other one.
 
-**Key Functions**: The contract performs staking ratio calculations, manages reward rate updates, cooldowns, handles conversion rate updates, and implements reward distribution logic to ensure fair and accurate reward allocation.
+**Key Functions**: The contract performs staking ratio calculations, manages reward rate updates, handles 7-day cooldowns, handles conversion rate updates, and implements reward distribution logic to ensure fair and accurate reward allocation.
 
 ---
 
@@ -59,7 +59,7 @@ This page contains all the essential contract addresses for the Standard Money p
 
 **Description**: The minting contract that handles the creation of USDsd tokens. While users primarily acquire USDsd through DEX trading or the app's swap widget, this contract manages the underlying minting process and collateral management for the protocol.
 
-**Key Functions**: The contract manages USDsd token staking, while checking the staked balance on the first contract. It also manages reward distributions and cooldown periods.
+**Key Functions**: The contract manages USDsd token staking, while checking the staked balance on the first contract. It also manages reward distributions and 7-day cooldown periods.
 
 ---
 
@@ -69,7 +69,7 @@ This page contains all the essential contract addresses for the Standard Money p
 
 **BSCScan**: [View Contract](https://bscscan.com/address/0x9032217f604FdF3FDD2995ef1fAFD1988d8417B3)
 
-**Description**: The silo contract that manages USDsd deposits and withdrawals within the protocol. This contract acts as a vault system, securely holding USDsd tokens untill the cooldown period has ended, after which users can withdraw the funds.
+**Description**: The silo contract that manages USDsd deposits and withdrawals within the protocol. This contract acts as a vault system, securely holding USDsd tokens until the 7-day cooldown period has ended, after which users can withdraw the funds.
 
 **Key Functions**: The contract manages USDsd withdrawal process.
 
@@ -102,7 +102,7 @@ This page contains all the essential contract addresses for the Standard Money p
   <Card title="Getting Started" icon="rocket" href="/quickstart">
     Learn how to get started with Standard Money
   </Card>
-  <Card title="Staking Guide" icon="lock" href="/solution-design/staking-usdsd">
+  <Card title="Staking Guide" icon="lock" href="/user-guides/staking-usdsd">
     Understand how to stake USDsd for rewards
   </Card>
   <Card title="FAQ" icon="question" href="/resources/faq">

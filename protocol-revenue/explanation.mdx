@@ -15,11 +15,15 @@ The Standard Money protocol generates revenue through advanced basis trading str
 
 ## Revenue Sources
 
-### Basis Trade Yields
+### Staking Rewards (Foundation Yield)
 
-Standard Money uses advanced algorithms to short perps and long spot simultaneously, earning yields from exchanges like Binance, OKX, and Bybit in real-time. The protocol is currently earning 8% APY with potential for up to 30% annual returns generated through perpetual futures trading. These basis trade yields are automatically distributed to sUSDsd holders as part of their rewards, providing the primary yield component.
+A portion of USDsd's collateral consists of staked crypto assets (stETH, stBTC) that generate foundational yield from Proof-of-Stake consensus mechanisms. This provides a stable base yield of 3-8% annually, similar to how traditional bonds provide base returns in a portfolio.
 
-The yield rate varies based on market conditions, with higher volatility generally leading to higher funding rates and increased revenue. The protocol continuously optimizes its trading strategies to maximize yield while maintaining effective risk management.
+### Funding Rate Arbitrage (Primary Revenue)
+
+Standard Money maintains short positions in perpetual futures contracts that historically exhibit positive funding rates, meaning short position holders receive payments. This delta-neutral strategy generates 8-20% annually and represents the primary revenue source for the protocol.
+
+The yield rate varies based on market conditions, with higher volatility generally leading to higher funding rates and increased revenue. The protocol continuously optimizes its hedging strategies to maximize yield while maintaining effective risk management.
 
 ### Liquidity Provision
 
@@ -111,6 +115,7 @@ The protocol is continuously evolving to improve revenue generation and user exp
   </Card>
 
 {" "}
+
 <Card
   title="Rewards Mechanism"
   icon="coins"
@@ -120,6 +125,7 @@ The protocol is continuously evolving to improve revenue generation and user exp
 </Card>
 
 {" "}
+
 <Card
   title="sUSDsd Rewards"
   icon="lock"
@@ -128,7 +134,7 @@ The protocol is continuously evolving to improve revenue generation and user exp
   Understand sUSDsd rewards and compounding mechanisms
 </Card>
 
-  <Card title="Governance" icon="users" href="/solution-design/governance">
+  <Card title="Governance" icon="users" href="/user-guides/governance">
     Participate in protocol governance and revenue decisions
   </Card>
 </Columns>

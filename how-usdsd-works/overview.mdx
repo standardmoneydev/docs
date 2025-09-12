@@ -52,24 +52,27 @@ USDsd is a synthetic, collateralized version of Tether that provides a stable an
 
 ## How USDsd Maintains Its Peg
 
-USDsd maintains its peg to the US dollar through a sophisticated delta-neutral hedging system combined with basis trading strategies:
+USDsd maintains its 1:1 peg to the US dollar through a sophisticated delta-neutral strategy that combines crypto asset collateral with derivatives hedging:
 
 <Steps>
-  <Step title="USDsd Acquisition">
-    Users can buy USDsd on DEXs or swap USDT/USDC using the app widget
+  <Step title="Crypto Asset Collateral">
+    USDsd is backed by crypto assets like ETH, BTC, and stablecoins (USDT, USDC)
+    held as collateral
   </Step>
-  <Step title="Basis Trading">
-    Advanced algorithms execute basis trades by shorting perps and longing spot
-    simultaneously
+  <Step title="Delta-Neutral Hedging">
+    Simultaneously holds long positions in crypto assets and equivalent short
+    positions in perpetual futures
   </Step>
-  <Step title="Exchange Integration">
-    Protocol works with major exchanges (Binance, OKX, Bybit) to execute trades
+  <Step title="Price Stability">
+    Fluctuations in crypto asset prices are offset by corresponding gains/losses
+    in short positions
   </Step>
   <Step title="Yield Generation">
-    Revenue is generated from funding payments and trading spreads
+    Revenue generated from staking rewards and positive funding rates on short
+    positions
   </Step>
   <Step title="Reward Distribution">
-    Generated yield is distributed to sUSDsd holders as rewards
+    All generated yield is distributed to sUSDsd holders as rewards
   </Step>
 </Steps>
 
@@ -145,7 +148,7 @@ Standard Money makes USDT what it was always meant to be - a 'stopover' for trad
   Designed specifically for the trader market with instant liquidity
 </Card>
 
-  <Card title="Exchange Integration" icon="exchange-alt">
+  <Card title="Exchange Integration" icon="right-left">
     Direct integration with major exchanges for optimal execution
   </Card>
 </Columns>
@@ -191,13 +194,13 @@ Standard Money makes USDT what it was always meant to be - a 'stopover' for trad
 ## Getting Started
 
 <Columns cols={2}>
-  <Card title="Mint USDsd" icon="plus-circle" href="/quickstart">
+  <Card title="Mint USDsd" icon="plus" href="/quickstart">
     Learn how to mint USDsd with supported collateral
   </Card>
 
 {" "}
 
-<Card title="Stake for Yield" icon="lock" href="/solution-design/staking-usdsd">
+<Card title="Stake for Yield" icon="lock" href="/user-guides/staking-usdsd">
   Stake USDsd to receive sUSDsd and earn rewards
 </Card>
 
@@ -205,13 +208,13 @@ Standard Money makes USDT what it was always meant to be - a 'stopover' for trad
 
 <Card
   title="Understand Risks"
-  icon="exclamation-triangle"
-  href="/solution-design/risks"
+  icon="triangle-exclamation"
+  href="/user-guides/risks"
 >
   Review the comprehensive risk documentation
 </Card>
 
-  <Card title="Technical Details" icon="cogs" href="/solution-design/overview">
+  <Card title="Technical Details" icon="gear" href="/user-guides/overview">
     Deep dive into the technical architecture
   </Card>
 </Columns>

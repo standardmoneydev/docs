@@ -3,41 +3,50 @@ title: "Basis Trade Strategy"
 description: "Learn how our advanced algorithms earn yields from perpetual trading"
 ---
 
-## What is Basis Trading?
+## What is Delta-Neutral Hedging?
 
-Basis trading is a sophisticated strategy that exploits price differences between spot and perpetual futures markets. Standard Money's algorithms automatically execute these trades to generate consistent yields for USDsd holders.
+Delta-neutral hedging is a sophisticated strategy that maintains USDsd's peg to the US dollar while generating yield. Standard Money's algorithms automatically execute these trades by holding long positions in crypto assets and equivalent short positions in perpetual futures to create a delta-neutral position.
 
 ## How It Works
 
-### The Basis Trade Mechanism
+### The Delta-Neutral Mechanism
 
 <Steps>
-  <Step title="Spot Market Analysis">
-    Our algorithms continuously monitor spot prices of major cryptocurrencies (BTC, ETH) across multiple exchanges
+  <Step title="Crypto Asset Collateral">
+    USDsd is backed by crypto assets like ETH, BTC, and stablecoins held as
+    collateral
   </Step>
-  <Step title="Perpetual Futures Monitoring">
-    Simultaneously track perpetual futures prices on exchanges like Binance, OKX, and Bybit
+  <Step title="Long Position Management">
+    Maintain long positions in the underlying crypto assets to provide
+    collateral backing
   </Step>
-  <Step title="Arbitrage Opportunity Detection">
-    Identify when the basis (price difference) between spot and futures exceeds profitable thresholds
+  <Step title="Short Futures Hedging">
+    Simultaneously hold equivalent short positions in perpetual futures to hedge
+    price exposure
   </Step>
-  <Step title="Automated Execution">
-    Execute simultaneous long spot and short futures positions to capture the basis spread
+  <Step title="Funding Rate Collection">
+    Collect positive funding rates from short positions when markets are in
+    contango
   </Step>
   <Step title="Yield Distribution">
-    Profits from successful basis trades are distributed to sUSDsd holders as rewards
+    Revenue from funding rates and staking rewards is distributed to sUSDsd
+    holders
   </Step>
 </Steps>
 
 ## Key Benefits
 
 ### Consistent Yield Generation
-- **Market Neutral**: Profits from price differences, not directional bets
-- **Low Risk**: Hedged positions reduce exposure to market volatility
+
+- **Delta Neutral**: Price movements in crypto assets are offset by short positions
+- **Low Risk**: Hedged positions eliminate directional market exposure
 - **Automated**: 24/7 operation without manual intervention
+- **Stable Peg**: Maintains 1:1 USD peg through sophisticated hedging
 
 ### Exchange Integration
+
 Our algorithms are integrated with major exchanges:
+
 - **Binance**: Largest crypto exchange with deep liquidity
 - **OKX**: Advanced derivatives platform
 - **Bybit**: Professional trading infrastructure
@@ -45,12 +54,14 @@ Our algorithms are integrated with major exchanges:
 ## Technical Implementation
 
 ### Algorithm Features
+
 - **Real-time Monitoring**: Sub-second price tracking across exchanges
 - **Risk Management**: Automated position sizing and stop-loss mechanisms
 - **Slippage Control**: Smart order routing to minimize execution costs
 - **Liquidity Management**: Dynamic allocation based on market conditions
 
 ### Yield Optimization
+
 - **Compound Strategy**: Reinvested profits increase future earning potential
 - **Multi-Asset**: Diversified across BTC, ETH, and other major cryptocurrencies
 - **Market Adaptation**: Algorithms adjust to changing market conditions
@@ -58,16 +69,19 @@ Our algorithms are integrated with major exchanges:
 ## Risk Considerations
 
 <Warning>
-  While basis trading is generally lower risk than directional trading, it's not risk-free. Market conditions can affect profitability.
+  While basis trading is generally lower risk than directional trading, it's not
+  risk-free. Market conditions can affect profitability.
 </Warning>
 
 ### Potential Risks
+
 - **Exchange Risk**: Technical issues or regulatory changes at exchanges
 - **Liquidity Risk**: Temporary inability to execute trades at optimal prices
 - **Basis Risk**: Unfavorable basis movements that reduce profitability
 - **Execution Risk**: Slippage or failed trades due to network congestion
 
 ### Risk Mitigation
+
 - **Multi-Exchange**: Diversified across multiple platforms
 - **Real-time Monitoring**: Continuous oversight of all positions
 - **Automated Stops**: Built-in risk management protocols
@@ -76,37 +90,42 @@ Our algorithms are integrated with major exchanges:
 ## Performance Metrics
 
 ### Historical Performance
-- **Average Yield**: 8% annualized (current)
+
+- **Foundation Yield**: 3-8% from staking rewards (stable)
+- **Funding Rate Yield**: 8-20% from positive funding rates (variable)
 - **Peak Performance**: Up to 30% during high volatility periods
 - **Consistency**: Stable returns across different market conditions
 - **Uptime**: 99.9% operational availability
 
 ### Monitoring Tools
+
 - **Real-time Dashboard**: Track current positions and performance
 - **Historical Analytics**: Review past performance and trends
 - **Yield Calculator**: Estimate potential returns based on current market conditions
 
 ## Getting Started
 
-To benefit from basis trading yields:
+To benefit from delta-neutral hedging yields:
 
-1. **Mint USDsd**: Convert your USDT to USDsd
-2. **Stake for sUSDsd**: Convert USDsd to sUSDsd to start earning
+1. **Acquire USDsd**: Buy USDsd on DEXs or swap USDT/USDC using the app widget
+2. **Stake for sUSDsd**: Convert USDsd to sUSDsd to start earning rewards
 3. **Monitor Performance**: Track your rewards in the app dashboard
 
 <Info>
-  The basis trading strategy runs automatically in the background. As a sUSDsd holder, you simply earn the generated yields without needing to manage trades yourself.
+  The delta-neutral hedging strategy runs automatically in the background. As a
+  sUSDsd holder, you simply earn the generated yields from staking rewards and
+  funding rates without needing to manage positions yourself.
 </Info>
 
 ## Next Steps
 
 <Columns cols={2}>
   <Card
-    title="Yield Strategies"
+    title="sUSDsd Rewards"
     icon="chart-line"
-    href="/how-usdsd-works/yield-strategies"
+    href="/protocol-revenue/susdsd-rewards"
   >
-    Learn about other yield generation methods
+    Learn about earning and maximizing sUSDsd rewards
   </Card>
   <Card
     title="Protocol Revenue"
@@ -116,5 +135,3 @@ To benefit from basis trading yields:
     Understand how revenue is distributed
   </Card>
 </Columns>
-
-

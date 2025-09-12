@@ -22,11 +22,7 @@
           },
           {
             "group": "How USDsd Works",
-            "pages": [
-              "how-usdsd-works/overview",
-              "how-usdsd-works/basis-trade",
-              "how-usdsd-works/yield-strategies"
-            ]
+            "pages": ["how-usdsd-works/overview", "how-usdsd-works/basis-trade"]
           },
           {
             "group": "Protocol Revenue",
@@ -34,27 +30,27 @@
             "pages": [
               "protocol-revenue/explanation",
               "protocol-revenue/rewards-mechanism",
-              "protocol-revenue/susdsd-rewards"
+              "protocol-revenue/susdsd-rewards",
+              "protocol-revenue/points-program"
             ]
           },
           {
             "group": "User Guides",
             "pages": [
-              "solution-design/overview",
-              "solution-design/getting-usdsd",
-              "solution-design/staking-usdsd",
-              "solution-design/unlock-positions"
+              "user-guides/overview",
+              "user-guides/getting-usdsd",
+              "user-guides/staking-usdsd",
+              "user-guides/unlock-positions"
             ]
           },
           {
             "group": "Key Addresses",
-            "pages": ["solution-design/key-addresses"]
+            "pages": ["user-guides/key-addresses"]
           },
           {
             "group": "Support",
             "pages": [
               "resources/faq",
-              "resources/terms",
               "resources/privacy-policy",
               "resources/usdsd-terms-and-conditions"
             ]
