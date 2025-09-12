@@ -1,0 +1,123 @@
+---
+title: "Solution Overview"
+description: "Technical architecture and design principles of the Standard Money protocol"
+---
+
+## Architecture Overview
+
+Standard Money is a synthetic dollar protocol built on BSC (Binance Smart Chain) that creates USDsd, a synthetic, collateralized version of Tether. The protocol maintains USDsd's peg through sophisticated delta-neutral hedging mechanisms and basis trading strategies.
+
+## How It Works
+
+<Steps>
+  <Step title="Collateral Deposit">
+    Users deposit supported collateral (USDT, USDC) into the protocol
+  </Step>
+  <Step title="USDsd Minting">
+    The protocol mints USDsd tokens backed by the deposited collateral
+  </Step>
+  <Step title="Basis Trading">
+    The protocol automatically executes basis trades by shorting perps and
+    longing spot
+  </Step>
+  <Step title="Revenue Generation">
+    Protocol earns revenue from basis trading profits and funding payments
+  </Step>
+  <Step title="Reward Distribution">
+    Revenue is distributed to sUSDsd holders as rewards
+  </Step>
+</Steps>
+
+## Supported Collateral
+
+<AccordionGroup>
+  <Accordion title="USDT (Tether)">
+    <div className="space-y-2">
+      <p><strong>Provider:</strong> Tether Limited</p>
+      <p><strong>Collateral Ratio:</strong> 1:1 (100% backing)</p>
+      <p><strong>Liquidity:</strong> Highest liquidity on BSC</p>
+      <p><strong>Risk:</strong> Minimal (primary collateral)</p>
+    </div>
+  </Accordion>
+
+{" "}
+
+<Accordion title="USDC (USD Coin)">
+  <div className="space-y-2">
+    <p>
+      <strong>Provider:</strong> Circle
+    </p>
+    <p>
+      <strong>Collateral Ratio:</strong> 1:1 (100% backing)
+    </p>
+    <p>
+      <strong>Liquidity:</strong> High liquidity on BSC
+    </p>
+    <p>
+      <strong>Risk:</strong> Minimal (stablecoin collateral)
+    </p>
+  </div>
+</Accordion>
+
+</AccordionGroup>
+
+## Security Model
+
+<AccordionGroup>
+  <Accordion title="Smart Contract Security">
+    <div className="space-y-3">
+      <p><strong>Multisig:</strong> All critical functions protected by multisig wallets</p>
+      <p><strong>Timelocks:</strong> Important parameter changes have timelock delays</p>
+      <p><strong>Upgradeability:</strong> Controlled upgradeability with governance</p>
+    </div>
+  </Accordion>
+
+{" "}
+
+<Accordion title="Operational Security">
+  <div className="space-y-3">
+    <p>
+      <strong>Custody:</strong> Assets held in institutional-grade custody
+    </p>
+    <p>
+      <strong>Hedging:</strong> Automated hedging with multiple exchange
+      partners
+    </p>
+    <p>
+      <strong>Monitoring:</strong> 24/7 monitoring of all protocol operations
+    </p>
+    <p>
+      <strong>Emergency:</strong> Emergency pause mechanisms for critical
+      situations
+    </p>
+  </div>
+</Accordion>
+
+  <Accordion title="Economic Security">
+    <div className="space-y-3">
+      <p><strong>Reserve Fund:</strong> Protocol maintains a reserve fund for negative funding</p>
+      <p><strong>Risk Management:</strong> Comprehensive risk management framework</p>
+      <p><strong>Insurance:</strong> Protocol insurance for extreme scenarios</p>
+      <p><strong>Governance:</strong> Decentralized governance for key decisions</p>
+    </div>
+  </Accordion>
+</AccordionGroup>
+
+## Protocol Revenue
+
+The Standard Money protocol generates revenue through multiple sources:
+
+<Columns cols={2}>
+  <Card title="Basis Trading Profits" icon="coins">
+    Revenue from automated basis trading between spot and futures markets
+  </Card>
+  <Card title="Funding Payments" icon="chart-line">
+    Revenue from perpetual futures funding payments
+  </Card>
+  <Card title="Liquidity Provision" icon="water-ladder">
+    Revenue from providing liquidity on perpetual order books
+  </Card>
+  <Card title="Cross-Exchange Arbitrage" icon="arrow-down-up-across-line">
+    Revenue from price differences between exchanges
+  </Card>
+</Columns>

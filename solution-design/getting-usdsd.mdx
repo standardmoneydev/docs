@@ -1,0 +1,86 @@
+---
+title: "Getting USDsd"
+description: "How to acquire USDsd tokens through DEX trading and app swaps"
+---
+
+## Overview
+
+USDsd acquisition is the process of obtaining USDsd tokens through decentralized exchanges or the built-in swap widget on the Standard Money app. Users can swap USDT or USDC for USDsd, which maintains a 1:1 peg with the US dollar through the protocol's sophisticated hedging mechanisms.
+
+<Info>
+  **Important Note**: Only specific whitelisted users can mint new USDsd tokens
+  directly to prevent supply overinflation and maintain protocol stability. All
+  users, however, can acquire USDsd by purchasing it on decentralized exchanges
+  (DEXs) or using the app's swap widget.
+</Info>
+
+## USDsd Acquisition Methods
+
+### Available Methods
+
+<Steps>
+  <Step title="App Swap Widget">
+    Use the built-in swap widget on app.standardmoney.com to swap USDT or USDC
+    for USDsd
+  </Step>
+  <Step title="DEX Trading">
+    Buy USDsd directly on decentralized exchanges like PancakeSwap
+  </Step>
+  <Step title="Transaction Confirmation">
+    Complete the swap or purchase transaction on the blockchain
+  </Step>
+  <Step title="USDsd in Wallet">
+    Receive USDsd tokens in your connected wallet
+  </Step>
+</Steps>
+
+### Smart Contract System
+
+The minting contract handles the minting process and collateral validation, while the collateral manager manages different types of collateral. The oracle system provides price feeds for collateral valuation, and the security module implements security checks and validations to ensure safe operations.
+
+## Supported Collateral
+
+### Primary Collateral: USDT
+
+- **Collateral Ratio**: 1:1 (1 USDT = 1 USDsd)
+- **Liquidation Risk**: None (perfect peg)
+- **Liquidity**: Highest
+- **Stability**: Maximum
+
+### Primary Collateral: USDC
+
+- **Collateral Ratio**: 1:1 (1 USDC = 1 USDsd)
+- **Liquidation Risk**: None (perfect peg)
+- **Liquidity**: High
+- **Stability**: Maximum
+
+<Info>
+  USDT is the primary and most efficient collateral for minting USDsd, offering
+  1:1 minting with no liquidation risk.
+</Info>
+
+## Minting Process
+
+### Step-by-Step Technical Flow
+
+1. **User Initiates Mint**
+
+   - User calls `mint()` function with collateral amount
+   - Transaction includes collateral transfer to protocol
+
+2. **Collateral Validation**
+
+   - Smart contract verifies collateral amount and type
+   - Oracle price feeds confirm current market prices
+   - Collateralization ratio is calculated and validated
+
+3. **USDsd Minting**
+
+   - Equivalent USDsd tokens are minted to user's address
+   - Minting event is emitted for transparency
+   - User's USDsd balance is updated
+
+4. **Collateral Management**
+   - Collateral is transferred to secure protocol vaults
+   - Collateral is marked as backing for minted USDsd
+   - Reserve ratios are updated

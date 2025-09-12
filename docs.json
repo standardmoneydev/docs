@@ -1,0 +1,111 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Standard Money Docs",
+  "colors": {
+    "primary": "#2e20de",
+    "light": "#4c3ce8",
+    "dark": "#1a0fb8"
+  },
+  "styles": {
+    "customCss": "/styles.css"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": ["index", "quickstart"]
+          },
+          {
+            "group": "How USDsd Works",
+            "pages": [
+              "how-usdsd-works/overview",
+              "how-usdsd-works/basis-trade",
+              "how-usdsd-works/yield-strategies"
+            ]
+          },
+          {
+            "group": "Protocol Revenue",
+            "icon": "coins",
+            "pages": [
+              "protocol-revenue/explanation",
+              "protocol-revenue/rewards-mechanism",
+              "protocol-revenue/susdsd-rewards"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "solution-design/overview",
+              "solution-design/getting-usdsd",
+              "solution-design/staking-usdsd",
+              "solution-design/unlock-positions"
+            ]
+          },
+          {
+            "group": "Key Addresses",
+            "pages": ["solution-design/key-addresses"]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "resources/faq",
+              "resources/terms",
+              "resources/privacy-policy",
+              "resources/usdsd-terms-and-conditions"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "App",
+          "href": "https://www.app.standardmoney.com",
+          "icon": "rocket"
+        },
+        {
+          "anchor": "Telegram",
+          "href": "https://t.me/StandardMoneyChat",
+          "icon": "telegram"
+        },
+        {
+          "anchor": "Twitter",
+          "href": "https://x.com/StandardMoney_",
+          "icon": "x"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "https://t.me/StandardMoneyChat"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Launch App",
+      "href": "https://app.standardmoney.com"
+    }
+  },
+  "contextual": {
+    "options": ["chatgpt"]
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/StandardMoney_",
+      "telegram": "https://t.me/StandardMoneyChat"
+    }
+  }
+}

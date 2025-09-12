@@ -1,0 +1,123 @@
+---
+title: "Deployment"
+description: "Essential contract addresses and key information for the Standard Money protocol on BSC"
+---
+
+## Overview
+
+This page contains all the essential contract addresses for the Standard Money protocol deployed on BSC (Binance Smart Chain). Always verify these addresses on BSCScan before interacting with any contracts.
+
+<Warning>
+  **Security Notice**: Always verify contract addresses on BSCScan before making
+  any transactions. Never use addresses from unofficial sources or unverified
+  channels.
+</Warning>
+
+## Core Protocol Contracts
+
+### USDsd Token Contract
+
+**Address**: `0xbe225e166299eDBf0FDC144A6800eAfBCe17eF72`
+
+**BSCScan**: [View Contract](https://bscscan.com/address/0xbe225e166299eDBf0FDC144A6800eAfBCe17eF72)
+
+**Description**: The main USDsd token contract that implements the ERC-20 standard. This contract handles the creation, transfer, and management of USDsd tokens. USDsd is a synthetic dollar token that maintains a 1:1 peg with the US dollar through the protocol's sophisticated hedging mechanisms.
+
+**Key Functions**: The contract manages token transfers and approvals, tracks balances across all holders, maintains total supply management, and integrates seamlessly with staking contracts to enable the staking functionality.
+
+---
+
+### StakedUSDsdV2 Contract
+
+**Address**: `0x4C8789ac099aE3ab6070e809fBb404607a690511`
+
+**BSCScan**: [View Contract](https://bscscan.com/address/0x4C8789ac099aE3ab6070e809fBb404607a690511)
+
+**Description**: The staking contract that allows users to stake their USDsd tokens to receive sUSDsd (staked USDsd) tokens. This contract manages the staking process, reward accrual, and unstaking functionality. sUSDsd tokens automatically compound rewards from protocol revenue.
+
+**Key Functions**: The contract handles USDsd to sUSDsd conversion, manages automatic reward accrual, provides unstaking functionality, and distributes rewards to stakers based on their stake amounts and duration.
+
+---
+
+### Ratio StakedUSDsdV2 Contract
+
+**Address**: `0x16600f39b4820dDc040a288c22550EF71743c6A5`
+
+**BSCScan**: [View Contract](https://bscscan.com/address/0x16600f39b4820dDc040a288c22550EF71743c6A5)
+
+**Description**: This contract is very similar to the StakedUSDsdV2 contract with one major difference. You need to have a balance staked in the first staking contract in order to stake in this one. Specifically to stake 1 token in this contract, you need to have 10 tokens staked in the other one.
+
+**Key Functions**: The contract performs staking ratio calculations, manages reward rate updates, cooldowns, handles conversion rate updates, and implements reward distribution logic to ensure fair and accurate reward allocation.
+
+---
+
+### StandMoneyMintingV2 Contract
+
+**Address**: `0xa63669e53838600699b20db5F389ed0959e8a512`
+
+**BSCScan**: [View Contract](https://bscscan.com/address/0xa63669e53838600699b20db5F389ed0959e8a512)
+
+**Description**: The minting contract that handles the creation of USDsd tokens. While users primarily acquire USDsd through DEX trading or the app's swap widget, this contract manages the underlying minting process and collateral management for the protocol.
+
+**Key Functions**: The contract manages USDsd token staking, while checking the staked balance on the first contract. It also manages reward distributions and cooldown periods.
+
+---
+
+### USDsdSilo Contract
+
+**Address**: `0x9032217f604FdF3FDD2995ef1fAFD1988d8417B3`
+
+**BSCScan**: [View Contract](https://bscscan.com/address/0x9032217f604FdF3FDD2995ef1fAFD1988d8417B3)
+
+**Description**: The silo contract that manages USDsd deposits and withdrawals within the protocol. This contract acts as a vault system, securely holding USDsd tokens untill the cooldown period has ended, after which users can withdraw the funds.
+
+**Key Functions**: The contract manages USDsd withdrawal process.
+
+## Security Considerations
+
+<AccordionGroup>
+  <Accordion title="Use Official Interfaces">
+    <p>
+      Whenever possible, use the official Standard Money app interface rather than
+      interacting directly with contracts. The app provides built-in address verification, transaction simulation capabilities, comprehensive error handling and user guidance, and security warnings and confirmations to protect users from common mistakes.
+    </p>
+  </Accordion>
+
+  <Accordion title="Test with Small Amounts">
+    <p>When testing new integrations or interactions, always start with small amounts to minimize risk. Verify transaction results before committing larger amounts, and monitor for any unexpected behavior that might indicate issues.</p>
+  </Accordion>
+</AccordionGroup>
+
+## Network Information
+
+**Network**: BSC (Binance Smart Chain)  
+**Chain ID**: 56  
+**RPC Endpoint**: https://bsc-dataseed.binance.org/  
+**Block Explorer**: https://bscscan.com/  
+**Native Token**: BNB
+
+## Support and Resources
+
+<Columns cols={2}>
+  <Card title="Getting Started" icon="rocket" href="/quickstart">
+    Learn how to get started with Standard Money
+  </Card>
+  <Card title="Staking Guide" icon="lock" href="/solution-design/staking-usdsd">
+    Understand how to stake USDsd for rewards
+  </Card>
+  <Card title="FAQ" icon="question" href="/resources/faq">
+    Find answers to common questions
+  </Card>
+  <Card
+    title="Telegram Support"
+    icon="telegram"
+    href="https://t.me/StandardMoneyChat"
+  >
+    Get help from the community
+  </Card>
+</Columns>
+
+<Note>
+  This page is regularly updated with the latest contract addresses. Always
+  check for the most recent version before making any transactions.
+</Note>
