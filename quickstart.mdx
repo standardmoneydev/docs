@@ -1,80 +1,117 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: "Quickstart Guide"
+description: "Get started with Standard Money in minutes"
 ---
 
-## Get started in three steps
+## Welcome to Standard Money
 
-Get your documentation site running locally and make your first customization.
+Standard Money is a synthetic dollar protocol that makes USDT what it was always meant to be. This guide will help you get started with minting, staking, and earning with USDsd and sUSDsd.
 
-### Step 1: Set up your local environment
+## What is USDsd?
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+USDsd is a synthetic, collateralized version of Tether that provides a stable and scalable solution to the trader market. Unlike traditional stablecoins, USDsd offers high yield potential of up to 30% annual returns, no lock-up periods allowing you to enter and exit anytime, and advanced basis trade strategies that use algorithms to short perps and long spot simultaneously.
 
-### Step 2: Deploy your changes
+## Getting Started
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+### Step 1: Connect Your Wallet
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+1. Visit the [Standard Money App](https://www.app.standardmoney.com)
+2. Connect your wallet (MetaMask, WalletConnect, etc.)
+3. Ensure you have USDT or USDC for swapping to USDsd
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+### Step 2: Get USDsd
 
-### Step 3: Go live
+<Steps>
+  <Step title="Choose Your Method">
+    You can get USDsd using the **Swap Widget** in the app.
+  </Step>
+  <Step title="Enter Amount">
+    Specify the amount of USDT or USDC you want to swap for USDsd
+  </Step>
+  <Step title="Review & Confirm">
+    Review the swap details and confirm the transaction in your wallet extension
+  </Step>
+</Steps>
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+### Step 3: Stake USDsd (Optional)
 
-## Next steps
+<Steps>
+  <Step title="Navigate to Staking">Go to the staking section in the app</Step>
+  <Step title="Stake Your USDsd">
+    Convert your USDsd to sUSDsd to start earning rewards
+  </Step>
+  <Step title="Monitor Rewards">
+    Track your sUSDsd balance and accumulated rewards
+  </Step>
+</Steps>
 
-Now that you have your docs running, explore these key features:
+## Understanding Rewards
 
-<CardGroup cols={2}>
+### sUSDsd Rewards
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
+When you stake USDsd to receive sUSDsd, you earn rewards from basis trade yields generated through perpetual futures trading on exchanges like Binance, OKX, and Bybit. Additionally, you benefit from liquidity provision rewards from providing liquidity on perpetual order books, and protocol revenue that is distributed to sUSDsd holders.
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
+<Info>
+  Rewards are automatically compounded into your sUSDsd balance, meaning your
+  sUSDsd amount increases over time. Current yield is 8% with potential for up
+  to 30% annual returns.
+</Info>
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
+## Security Considerations
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
+<Warning>
+  Always verify you're on the official Standard Money app at standardmoney.com
+  before connecting your wallet or making transactions.
+</Warning>
 
-</CardGroup>
+### Best Practices
+
+- **Start small**: Begin with a small amount to familiarize yourself with the protocol
+- **Keep private keys secure**: Never share your wallet's private keys or seed phrase
+- **Monitor positions**: Regularly check your USDsd/sUSDsd balance and rewards
+
+It's essential to understand the risks involved before participating. We recommend reviewing the comprehensive risk documentation to make informed decisions about your participation in the protocol.
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card
+    title="Learn How USDsd Works"
+    icon="book"
+    href="/how-usdsd-works/overview"
+  >
+    Deep dive into the technical mechanics of USDsd
+  </Card>
+  <Card
+    title="Explore Protocol Revenue"
+    icon="coins"
+    href="/protocol-revenue/explanation"
+  >
+    Understand how the protocol generates and distributes revenue
+  </Card>
+  <Card
+    title="Review Security Model"
+    icon="shield-check"
+    href="/solution-design/key-trust-assumptions"
+  >
+    Learn about the protocol's security and trust assumptions
+  </Card>
+  <Card
+    title="Check Key Addresses"
+    icon="key"
+    href="/solution-design/key-addresses"
+  >
+    Verify all contract addresses and multisig wallets
+  </Card>
+</Columns>
+
+## Need Help?
+
+- **Telegram**: Join our [Telegram community](https://t.me/StandardMoneyChat) for support
+- **Documentation**: Browse our comprehensive [documentation](/)
+- **FAQ**: Check our [frequently asked questions](/resources/faq)
 
 <Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
+  This is a high-level overview. For detailed technical information, please
+  refer to the specific documentation sections.
 </Note>

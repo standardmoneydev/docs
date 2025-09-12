@@ -1,68 +1,62 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Standard Money Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2e20de",
+    "light": "#4c3ce8",
+    "dark": "#1a0fb8"
   },
-  "favicon": "/favicon.svg",
+  "styles": {
+    "customCss": "/styles.css"
+  },
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
+            "pages": ["index", "quickstart"]
+          },
+          {
+            "group": "How USDsd Works",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "how-usdsd-works/overview",
+              "how-usdsd-works/basis-trade",
+              "how-usdsd-works/yield-strategies"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Protocol Revenue",
+            "icon": "coins",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "protocol-revenue/explanation",
+              "protocol-revenue/rewards-mechanism",
+              "protocol-revenue/susdsd-rewards"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "User Guides",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "solution-design/overview",
+              "solution-design/getting-usdsd",
+              "solution-design/staking-usdsd",
+              "solution-design/unlock-positions"
             ]
           },
           {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "group": "Key Addresses",
+            "pages": ["solution-design/key-addresses"]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Support",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "resources/faq",
+              "resources/terms",
+              "resources/privacy-policy",
+              "resources/usdsd-terms-and-conditions"
             ]
           }
         ]
@@ -71,57 +65,47 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "App",
+          "href": "https://www.app.standardmoney.com",
+          "icon": "rocket"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Telegram",
+          "href": "https://t.me/StandardMoneyChat",
+          "icon": "telegram"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Twitter",
+          "href": "https://x.com/StandardMoney_",
+          "icon": "x"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://t.me/StandardMoneyChat"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Launch App",
+      "href": "https://app.standardmoney.com"
     }
   },
   "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+    "options": ["chatgpt"]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/StandardMoney_",
+      "telegram": "https://t.me/StandardMoneyChat"
     }
   }
 }
