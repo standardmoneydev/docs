@@ -2,10 +2,11 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Standard Money Docs",
+  "defaultTheme": "light",
   "colors": {
     "primary": "#2e20de",
-    "light": "#4c3ce8",
-    "dark": "#1a0fb8"
+    "light": "#64abff",
+    "dark": "#2e20de"
   },
   "styles": {
     "customCss": "/styles.css"
@@ -18,10 +19,12 @@
         "groups": [
           {
             "group": "Getting Started",
+            "icon": "rocket",
             "pages": ["index", "quickstart"]
           },
           {
             "group": "How USDsd Works",
+            "icon": "gears",
             "pages": ["how-usdsd-works/overview", "how-usdsd-works/basis-trade"]
           },
           {
@@ -36,6 +39,7 @@
           },
           {
             "group": "User Guides",
+            "icon": "graduation-cap",
             "pages": [
               "user-guides/overview",
               "user-guides/getting-usdsd",
@@ -45,10 +49,12 @@
           },
           {
             "group": "Key Addresses",
+            "icon": "key",
             "pages": ["user-guides/key-addresses"]
           },
           {
             "group": "Support",
+            "icon": "headset",
             "pages": [
               "resources/faq",
               "resources/privacy-policy",
