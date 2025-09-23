@@ -68,7 +68,7 @@
       "anchors": [
         {
           "anchor": "App",
-          "href": "https://app.standardmoney.com",
+          "href": "https://app-test.standardmoney.com",
           "icon": "rocket"
         },
         {
@@ -98,7 +98,7 @@
     "primary": {
       "type": "button",
       "label": "Launch App",
-      "href": "https://app.standardmoney.com"
+      "href": "https://app-test.standardmoney.com"
     }
   },
   "contextual": {
